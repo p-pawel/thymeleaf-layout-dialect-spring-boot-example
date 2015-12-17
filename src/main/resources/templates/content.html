@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout">
+<head>
+    <title>Content page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"/>
+    <style>
+        body {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+<section layout:fragment="content">
+    <p>And this is content from content page.</p>
+</section>
+<footer>
+    <p layout:fragment="footer">This footer will be ignored, as no placeholder for 'footer' layout fragment was prepared in layout template. </p>
+</footer>
+</body>
+</html>
